@@ -32,3 +32,27 @@ using namespace std;
 
 return 0;
 }
+int serch(int arr[],int n,int key){
+    for (int  i = 0; i < n; i++)
+    {
+        if (arr[i]==key)
+        {
+            return i;
+        }
+        
+    }
+   return -1; 
+}
+
+// in linea]r search to find index of element 
+int main(void){
+int arr[]={2,3,4,5,9,6,4,7};
+int key= 3;
+int n= sizeof(arr)/sizeof(arr[0]);
+int fun= serch(arr,n,key);
+(fun == -1)
+?cout<<" your eliment is not present in array"
+:cout<<" your element is present in array at index : "<<fun;
+
+return 0;
+}
